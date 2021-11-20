@@ -12,8 +12,12 @@
 3. Compile and run the executables:
     -3.1. ./ExpExactCore for exact core computation
     Arguments:
+    
     -3.2. ./ExpApproxCore for approximate core computation
     Arguments:
+    
     -3.3. ./ExpSamplingRuntime for sampling runtime experiment
+    
     -3.4. ./ExpSamplingQuality for sampling quality experiment
+    
     -3.5. ./ExpClosureRuntime for closure runtime experiment
