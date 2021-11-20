@@ -12,10 +12,12 @@
 4. Compile and run the executables:
 
     4.1. ./ExpExactCore for exact core computation
-    Arguments:
+    
+    *Arguments:*
     
     4.2. ./ExpApproxCore for approximate core computation
-    Arguments:
+    
+    *Arguments:*
     
     4.3. ./ExpSamplingRuntime for sampling runtime experiment
     
