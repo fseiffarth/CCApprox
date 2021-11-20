@@ -13,11 +13,17 @@
 
     4.1. ./ExpExactCore for exact core computation
     
-    *Arguments:*
+    | Attempt | #1  | #2  |
+    | :---:   | :-: | :-: |
+    | Seconds | 301 | 283 |
+
     
     4.2. ./ExpApproxCore for approximate core computation
     
-    *Arguments:*
+    | Attempt | #1  | #2  |
+    | :---:   | :-: | :-: |
+    | Seconds | 301 | 283 |
+
     
     4.3. ./ExpSamplingRuntime for sampling runtime experiment
     
