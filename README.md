@@ -1,7 +1,8 @@
 # CCApprox
 
 **Results of Experiments:**
--see out/ICDE_2022
+
+-see *out/ICDE_2022/*
 
 **Usage of Code:**
 
