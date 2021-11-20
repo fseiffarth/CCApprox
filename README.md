@@ -5,10 +5,10 @@ Usage of Code:
 2. Download the SNAP 6.0 library from http://snap.stanford.edu/snap/download.html
 2. Convert the graphs
 3. Compile and run the executables:
-    3.1 ./ExpExactCore for exact core computation
+    3.1. ./ExpExactCore for exact core computation
     Arguments:
-    3.2 ./ExpApproxCore for approximate core computation
+    3.2. ./ExpApproxCore for approximate core computation
     Arguments:
-    3.3 ./ExpSamplingRuntime for sampling runtime experiment
-    3.4 ./ExpSamplingQuality for sampling quality experiment
-    3.5 ./ExpClosureRuntime for closure runtime experiment
+    3.3. ./ExpSamplingRuntime for sampling runtime experiment
+    3.4. ./ExpSamplingQuality for sampling quality experiment
+    3.5. ./ExpClosureRuntime for closure runtime experiment
