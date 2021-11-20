@@ -13,9 +13,9 @@
 
     4.1. ./ExpExactCore for exact core computation
     
-    | Attempt | #1  | #2  |
+    <| Attempt | #1  | #2  |
     | :---:   | :-: | :-: |
-    | Seconds | 301 | 283 |
+    | Seconds | 301 | 283 |>
 
     
     4.2. ./ExpApproxCore for approximate core computation
