@@ -1,0 +1,67 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.267004,0.004874,0.329415}
+\definecolor{color1}{rgb}{0.275191,0.194905,0.496005}
+\definecolor{color2}{rgb}{0.212395,0.359683,0.55171}
+\definecolor{color3}{rgb}{0.153364,0.497,0.557724}
+\definecolor{color4}{rgb}{0.122312,0.633153,0.530398}
+\definecolor{color5}{rgb}{0.288921,0.758394,0.428426}
+\definecolor{color6}{rgb}{0.626579,0.854645,0.223353}
+\definecolor{color7}{rgb}{0.993248,0.906157,0.143936}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.97,0.03)},
+  anchor=south east,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Size},
+xmin=550, xmax=10450,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ymin=18.603, ymax=82.337,
+ytick style={color=black}
+]
+\addplot [semithick, color0]
+table [row sep=\\] {%
+1000 27.19\\2000 40.73\\3000 54.94\\4000 59.02\\5000 65.22\\6000 66.82\\7000 70.44\\8000 68.07\\9000 75.47\\10000 76.11\\};
+\addlegendentry{Avg. Face Number}
+\addplot [semithick, color1]
+table [row sep=\\] {%
+1000 32.34\\2000 45.82\\3000 52.68\\4000 58.01\\5000 61.6\\6000 62.92\\7000 68.33\\8000 65.97\\9000 70.31\\10000 74.5\\};
+\addlegendentry{Avg. Face Number}
+\addplot [semithick, color2]
+table [row sep=\\] {%
+1000 33.32\\2000 48.39\\3000 52.24\\4000 57.48\\5000 62.62\\6000 62.73\\7000 69.41\\8000 66.94\\9000 68.09\\10000 70.52\\};
+\addlegendentry{Avg. Face Number}
+\addplot [semithick, color3]
+table [row sep=\\] {%
+1000 33.51\\2000 46.5\\3000 51.08\\4000 59.06\\5000 57.76\\6000 59.47\\7000 63.03\\8000 66.84\\9000 67.89\\10000 71.77\\};
+\addlegendentry{Avg. Face Number}
+\addplot [semithick, color4]
+table [row sep=\\] {%
+1000 33.34\\2000 47.82\\3000 54.61\\4000 57.29\\5000 59.41\\6000 62.3\\7000 62.35\\8000 67.68\\9000 68.38\\10000 71.92\\};
+\addlegendentry{Avg. Face Number}
+\addplot [semithick, color5]
+table [row sep=\\] {%
+1000 37.22\\2000 42.81\\3000 52.64\\4000 57.83\\5000 58.52\\6000 63.46\\7000 61.66\\8000 65.39\\9000 63.43\\10000 65.98\\};
+\addlegendentry{Avg. Face Number}
+\addplot [semithick, color6]
+table [row sep=\\] {%
+1000 35.98\\2000 46.16\\3000 52.21\\4000 55.34\\5000 57.17\\6000 57.86\\7000 61.86\\8000 63.98\\9000 66.53\\10000 65.95\\};
+\addlegendentry{Avg. Face Number}
+\addplot [semithick, color7]
+table [row sep=\\] {%
+1000 21.5\\2000 43.28\\3000 54.36\\4000 61.26\\5000 64.87\\6000 67.99\\7000 69.72\\8000 72.41\\9000 75.7\\10000 79.44\\};
+\addlegendentry{Avg. Face Number}
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,16 @@
+,Graph,Size,Edges,Density
+,Wiki-Vote_component,7066,100736,0.004036
+,Slashdot0902_component,82168,582533,0.000173
+,facebook_combined_component,4039,88234,0.010820
+,Cit-HepTh_component,27400,352059,0.000938
+,Cit-HepPh_component,34401,420828,0.000711
+,web-NotreDame_component,325729,1117563,0.000021
+,web-Stanford_component,255265,1941926,0.000060
+,com-dblp.ungraph_component,317080,1049866,0.000021
+,com-amazon.ungraph_component,334863,925872,0.000017
+,Email-Enron_component,33696,180811,0.000319
+,CA-GrQc_component,4158,13428,0.001554
+,CA-AstroPh_component,17903,197031,0.001230
+,CA-CondMat_component,21363,91342,0.000400
+,CA-HepPh_component,11204,117649,0.001875
+,CA-HepTh_component,8638,24827,0.000666

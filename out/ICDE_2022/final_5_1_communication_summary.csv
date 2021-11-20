@@ -1,0 +1,2 @@
+,Graph,Nodes,Edges,Density,Core Size,Exact Runtime,Threshold,Generator Size,Tree Core Runtime,Tree Runtime,Tree Recall,Tree Similarity,Outerplanar Core Runtime,Outerplanar Runtime,Outerplanar Recall,Outerplanar Similarity
+,Email-Enron_component,33696,180811,0.000159,10424,747.000000,0.010000,5,1.645942,12.156629,0.013143,0.013134,4.259213,42.866151,0.850058,0.792009

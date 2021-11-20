@@ -1,0 +1,14 @@
+.idea/
+cmake-build-release/
+cmake-build-debug/
+/out/graphs/
+/out/Approximations/
+/out/tests/
+/out/results/
+/out/patterns/
+/out/faceTest/
+/out/Experiments/
+/out/.*
+cmake_install.cmake
+MakeFile/
+CMakeCache.txt
