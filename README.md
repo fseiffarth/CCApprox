@@ -13,7 +13,7 @@
 
     4.1. ./ExpExactCore for exact core computation
     
-    <| Attempt | #1  | #2  |>
+    [Comment]: <| Attempt | #1  | #2  |>
     <| :---:   | :-: | :-: |>
     <| Seconds | 301 | 283 |>
 
