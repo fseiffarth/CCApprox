@@ -1,9 +1,9 @@
 # CCApprox
 
-Results of Experiments:
+**Results of Experiments:**
 -see out/ICDE_2022
 
-Usage of Code:
+**Usage of Code:**
 
 1. Download the graph data from http://snap.stanford.edu/data/index.html
 2. Download the SNAP 6.0 library from http://snap.stanford.edu/snap/download.html
