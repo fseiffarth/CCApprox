@@ -23,8 +23,8 @@ struct OverlapApproxParams{
 
     int thread_num = -1;
 
-    int max_nodes = 100000;
-    int max_edges = 200000;
+    int max_nodes = std::numeric_limits<int>::max();
+    int max_edges = std::numeric_limits<int>::max();
 
     std::vector<int> generator_size = {10};
     int generator_seed = 0;

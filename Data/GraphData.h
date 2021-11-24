@@ -81,5 +81,7 @@ public:
 
     void init(int size);
     void init();
+
+    void UpdateSingletons(const std::string &graphPath);
 };
 #endif //CLOSURES_GRAPHDATA_H

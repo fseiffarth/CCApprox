@@ -32,7 +32,7 @@ GraphData::GraphData(const std::string &graphPath) : Data<PUNGraph>(new TUNGraph
                     this->get_graph()->AddEdge(src, dest);
                 }
             }
-            _name = std::filesystem::path(graphPath).stem();
+            _name = std::filesystem::path(graphPath).stem().string();
         }
         catch (...) {
         }
@@ -280,11 +280,11 @@ double GraphData::density() const{
     return edges()/ ((double) nodes() * nodes());
 }
 
-void GraphData::Update(const std::string &graphPath) {
+void GraphData::UpdateSingletons(const std::string &graphPath) {
     GraphData graphData = GraphData(new TUNGraph());
-    std::string name = std::filesystem::path(graphPath).stem();
+    std::string name = std::filesystem::path(graphPath).stem().string();
     std::cout << "Updating " << name << std::filesystem::path(graphPath).extension() << std::endl;
-    std::string extension = std::filesystem::path(graphPath).extension();
+    std::string extension = std::filesystem::path(graphPath).extension().string();
     if (extension == ".edges" || extension == ".txt") {
         try {
             NodeId src;
@@ -332,6 +332,63 @@ void GraphData::Update(const std::string &graphPath) {
     }
     std::string parent_path = std::filesystem::path(graphPath).parent_path().string();
     graphData.save_edges(parent_path + "/");
+
+}
+
+void GraphData::Update(const std::string &graphPath) {
+    GraphData graph = GraphData(new TUNGraph());
+    std::string name = std::filesystem::path(graphPath).stem().string();
+    std::cout << "Updating " << name << std::filesystem::path(graphPath).extension() << std::endl;
+    std::string extension = std::filesystem::path(graphPath).extension().string();
+    if (extension == ".edges" || extension == ".txt") {
+        try {
+            NodeId src;
+            NodeId dest;
+            std::string a, b;
+            std::string line;
+            std::ifstream infile(graphPath);
+            while(std::getline(infile, line)){
+                std::istringstream iss(line);
+                iss >> a;
+                if (a == "#"){
+                    continue;
+                }
+                iss >> b;
+                if (b.empty()){
+                    for (int i = 0; i < std::stoi(a); ++i) {
+                        graph.graph()->AddNode(i);
+                    }
+                }
+                else{
+                    src = std::stoi(a);
+                    dest = std::stoi(b);
+                    if (!graph.graph()->IsNode(src)){
+                        graph.graph()->AddNode(src);
+                    }
+                    if (!graph.graph()->IsNode(dest)){
+                        graph.graph()->AddNode(dest);
+                    }
+                    graph.graph()->AddEdge(src, dest);
+                }
+            }
+
+
+        }
+        catch (...) {
+        }
+        GraphData graphData = GraphData(GraphFunctions::ResetGraphIds(graph.get_graph()));
+        graphData.setName(name);
+        for (int i = 0; i < graphData.nodes(); ++i) {
+            if (!graphData.get_graph()->IsNode(i)){
+                graphData.graph()->AddNode(i);
+            }
+        }
+        if (graphData.nodes() != graphData.get_graph()->GetMxNId()){
+            throw std::range_error("Nodes " + std::to_string(graphData.nodes()) + " and Ids (" + std::to_string(graphData.get_graph()->GetMxNId()) +") do not fit for the graph! " + graphData.getName() + "\n");
+        }
+        std::string parent_path = std::filesystem::path(graphPath).parent_path().string();
+        graphData.save_edges(parent_path + "/");
+    }
 
 }
 

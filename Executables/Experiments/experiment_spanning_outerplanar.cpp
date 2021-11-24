@@ -2,11 +2,11 @@
 // Created by florian on 31.08.21.
 //
 
-#include "../Experiments/Experiments.h"
+#include "../../Experiments/Experiments.h"
 
 void runtime_experiment() {
     int n = 1000;
-    std::string out_name = "sampling_runtime_14_11";
+    std::string out_name = "sampling_runtime";
 #pragma omp parallel for default(none) shared(n, out_name)
     for (int j = 0; j < 8; ++j) {
         double p = 0.006 + 0.002*j;
