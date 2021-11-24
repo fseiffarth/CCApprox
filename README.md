@@ -20,8 +20,8 @@
    4. ```./ExpExactCore``` for exact core computation
     
           | Command | -i  | -o  | -t | --generators | --generator_seed | --core_iterations | --max_nodes | --max_edges | --overall | --sample_seed |
-          | :---:   | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-          | Seconds | 301 | 283 | 301 | 283 | 301 | 283 | 301 | 283 | 301 | 283 |
+          | :---:   | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+          | Seconds | 301 | 283 | 301 | 283 | 301 | 283 | 301 | 283 | 301 | 283 | 283 |
    5. ```./ExpApproxCore``` for approximate core computation
    
       | Attempt | #1  | #2  |
