@@ -7,7 +7,7 @@
 **Usage of Code:**
 
 1. Clone this repository
-2. Create folders *GraphData* and *ExternalLibraries* in the same location
+2. Create folders *GraphData* and *ExternalLibraries* outside of *CCApprox* in the same location
 3. Download the SNAP 6.0 library from http://snap.stanford.edu/snap/download.html and unpack in *ExternalLibraries* folder
 4. Download the graphs from http://snap.stanford.edu/data/index.html and save unpacked *.txt* in *GraphData* folder or sub-folders
 5. Create build inside *CCAprox* folder and compile:
