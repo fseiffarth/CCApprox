@@ -21,7 +21,7 @@
     
        | Optional Arguments | ```-i```  | ```-t```  | ```--generators``` | ```--generator_seed``` | ```--core_iterations``` | ```--max_nodes``` | ```--max_edges``` |
        | :---:   | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------: | :------------: |
-       | Seconds | input path | output path | thread num | generator number | generator seed | iterations of the core | max graph size | max graph edges |
+       | Seconds | input path | thread num | generator number | generator seed | iterations of the core | max graph size | max graph edges |
    5. ```./ExpApproxCore``` for approximate core computation
    
        | Optional Arguments | ```-i```  | ```-o```  | ```-t```  | ```--generators``` | ```--generators_end```| ```--generators_step``` | ```--generator_seed``` | ```--threshold``` | ```--threshold_end``` | ```--threshold_step``` | ```--core_iterations```  | ```--samples``` | ```--sample_seed```  | ```--max_nodes``` | ```--max_edges``` |
