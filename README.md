@@ -19,8 +19,8 @@
    3. ```./ExpClosureRuntime``` for closure runtime experiment
    4. ```./ExpExactCore``` for exact core computation
     
-       | Optional Arguments | ```-i```  | ```-o```  | ```-t```  | ```--generators``` | ```--generator_seed``` | ```--core_iterations``` | ```--max_nodes``` | ```--max_edges``` |
-       | :---:   | :-: | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------: | :------------: |
+       | Optional Arguments | ```-i```  | ```-t```  | ```--generators``` | ```--generator_seed``` | ```--core_iterations``` | ```--max_nodes``` | ```--max_edges``` |
+       | :---:   | :-: | :-: | :------------: | :-----------------: | :------------------: | :------------: | :------------: |
        | Seconds | input path | output path | thread num | generator number | generator seed | iterations of the core | max graph size | max graph edges |
    5. ```./ExpApproxCore``` for approximate core computation
    
